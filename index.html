@@ -8,7 +8,7 @@
 		<meta name="author" content="Sala6" />
         <!-- jQuery library (served from Google) -->
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery-2.0.3.min.js"></script>
         <!-- bxSlider Javascript file -->
 <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
 <!-- bxSlider CSS file -->
@@ -20,6 +20,18 @@ $(document).ready(function(){
 });
 });
 </script>
+
+<script language="javascript" type="text/javascript">
+ function playSound() {
+	 var nvo = document.createElement("div");
+	 
+ nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
+ nvo.hidden;
+ document.getElementById("top").appendChild(nvo);
+ var imagen = document.getElementById("ecualizador");
+ imagen.src =  "img/GIF0111.gif";
+ }
+ </script>
         
 		<!-- Date: 2013-08-19 -->
 	</head>
@@ -56,8 +68,9 @@ $(document).ready(function(){
                     </li>
        
      <button id="botonstop">  </button>
-    <button id="botonplay">  </button>
+    <button id="botonplay" onClick="playSound();">  </button>
     <p>¡ESCÚCHANOS!</p>
+    <img id="ecualizador"></img>
     
     </nav>
     </div>

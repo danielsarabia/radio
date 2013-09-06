@@ -80,7 +80,7 @@ float:left;
 	/*margin-top:5px;*/
 	
 	/* */
-background:#0C0C0C;
+background:#000000;
 display:block;
 /*padding:10px 12px;*/
 }
@@ -161,10 +161,16 @@ height: 100%;
 
 #top{
 	text-align:center;
-	background-color:#0C0C0C;
+	background-color:#000000;
 	margin-bottom:25px;
 	height: 50px;
 	z-index:7;
+}
+
+#ecualizador{
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
 }
 
 #pie{
