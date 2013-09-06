@@ -140,6 +140,8 @@ display: inline;
 
 body {
 height: 100%;
+background-image:url(../img/fondopuntos.png);
+background-repeat:repeat;
 }
 
 html{
@@ -259,7 +261,7 @@ height: 100%;
 
 .noticia {
 	float:left;
-	background-color:#CCCCCC;
+	background-color:#009966;
 	 text-align:center;
      width:243px;
 	 height:235px;
@@ -270,7 +272,7 @@ height: 100%;
 
 #recomendaciones {
 	float:left;
-	background-color:#00CC99;
+	background-color:#00D791;
 	 text-align:center;
      width:501px;
 	 height:235px;
