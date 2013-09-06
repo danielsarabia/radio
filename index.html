@@ -23,13 +23,14 @@ $(document).ready(function(){
 
 <script language="javascript" type="text/javascript">
  function playSound() {
-	 var nvo = document.createElement("div");
 	 
- nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
- nvo.hidden;
- document.getElementById("top").appendChild(nvo);
- var imagen = document.getElementById("ecualizador");
- imagen.src =  "img/GIF0111.gif";
+	 var nvo = document.createElement("div");
+	 nvo.id="rola";
+	 nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
+	 nvo.hidden;
+	 document.getElementById("top").appendChild(nvo);
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/GIF0111.gif";
  }
  </script>
         
