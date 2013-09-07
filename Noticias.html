@@ -6,8 +6,110 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title></title>
 		<meta name="author" content="Sala6" />
+        <!-- jQuery library (served from Google) -->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="js/jquery-2.0.3.min.js"></script>
+        <!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  auto: true, captions: true, pager: false
+});
+});
+</script>
+
+<script language="javascript" type="text/javascript">
+ function playSound() {
+	 
+	 var nvo = document.createElement("div");
+	 nvo.id="rola";
+	 nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
+	 nvo.hidden;
+	 document.getElementById("top").appendChild(nvo);
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/GIF0111.gif";
+ }
+ </script>
+        
+		<!-- Date: 2013-08-19 -->
 	</head>
 	<body>
+    <div id="top">
+    <nav class="nav">
+    				<li>
+                        <a href="index.html">Inicio<span class="flecha">∨</span></a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <a>Programas<span class="flecha">∨</span></a>
+                        <ul>
+                            <li><a href="script1.html">Programa #1<span class="flecha">∨</span></a></li>
+                            <li><a href="script2.html">Programa #2<span class="flecha">∨</span></a></li>
+                            <li><a href="script3.html">Programa #3<span class="flecha">∨</span></a></li>
+                            <li><a href="script4.html">Programa #4<span class="flecha">∨</span></a></li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    
+                    
+                    
+                    <li>
+                        <a href="">Noticias<span class="flecha">∨</span></a>
+                    </li>
+                    <li>|</li>
+                    
+                    <li>
+                        <a href="pagina4.html">Contacto<span class="flecha">∨</span></a>
+                    </li>
+       
+     <button id="botonstop">  </button>
+    <button id="botonplay" onClick="playSound();">  </button>
+    <p>¡ESCÚCHANOS!</p>
+    <img id="ecualizador"></img>
+    
+    </nav>
+    </div>
+    
+    <div id="global">
+        <div id="area">
+            <div id="contenido">
+            <div id="contenedorNoticias">
+            <article id="artic"> <header><h2> <a>NOTICIA #1</a></h2></header> <footer>Escrito el 28 de Agosto del 2013 por Daniel Sarabia Tiznado</footer> <section><br />
+                    	<p>JAVA Script es un lenguaje interpretado, multiplataforma, orientado a eventos con manejo de objetos, cuyo código se incluye directamente en el mismo documento, usado para el desarrollo de aplicaciones cliente-servidor en paginas HTML.</p>
+<p>Originalmente denominado Live Script, fue introducido por Netscape, mediante su Navigator 2.0. Poco tiempo después aparece el VBScript (Visual Basic Script) de Microsoft, un buen competidor.</p>
+<p>Hasta entonces ya se usaba HTML y JAVA, pero la aparición del JAVA Script produjo una importante revolución, ya que dio al usuario la posibilidad crear aplicaciones "on-line" osea modificar páginas web en tiempo real, sin usar CGI´s.</p>
+ </section> </article>
+ 
+ <article id="artic"> <header><h2><a>NOTICIA #2</a></h2></header> <footer>Escrito el 28 de Agosto del 2013 por Daniel Sarabia Tiznado</footer> <section><br />
+                    	<p>JAVA Script es un lenguaje interpretado, multiplataforma, orientado a eventos con manejo de objetos, cuyo código se incluye directamente en el mismo documento, usado para el desarrollo de aplicaciones cliente-servidor en paginas HTML.</p>
+<p>Originalmente denominado Live Script, fue introducido por Netscape, mediante su Navigator 2.0. Poco tiempo después aparece el VBScript (Visual Basic Script) de Microsoft, un buen competidor.</p>
+<p>Hasta entonces ya se usaba HTML y JAVA, pero la aparición del JAVA Script produjo una importante revolución, ya que dio al usuario la posibilidad crear aplicaciones "on-line" osea modificar páginas web en tiempo real, sin usar CGI´s.</p>
+ </section> </article>
+ 
+ <article id="artic"> <header><h2><a>NOTICIA #3</a></h2></header> <footer>Escrito el 28 de Agosto del 2013 por Daniel Sarabia Tiznado</footer> <section><br />
+                    	<p>JAVA Script es un lenguaje interpretado, multiplataforma, orientado a eventos con manejo de objetos, cuyo código se incluye directamente en el mismo documento, usado para el desarrollo de aplicaciones cliente-servidor en paginas HTML.</p>
+<p>Originalmente denominado Live Script, fue introducido por Netscape, mediante su Navigator 2.0. Poco tiempo después aparece el VBScript (Visual Basic Script) de Microsoft, un buen competidor.</p>
+<p>Hasta entonces ya se usaba HTML y JAVA, pero la aparición del JAVA Script produjo una importante revolución, ya que dio al usuario la posibilidad crear aplicaciones "on-line" osea modificar páginas web en tiempo real, sin usar CGI´s.</p>
+ </section> </article>
+ 			</div>
+            	
+            </div>
+        </div>
+					
+	</div>
+    
+    <div id="pie">
+        <div id="contenedorpie">
+        	<div class="cajapie"><h1>PROGRAMAS</h1><p>Programa 1</p><p>Programa 2</p><p>Programa 3</p><p>Programa 4</p></div>
+            <div class="cajapie"><h1>NOTICIAS</h1><p>Destacadas</p><p>Reseñas</p><p>Columna</p><p>Exclusivas</p></div>
+            <div class="cajapie"><h1>INICIO</h1><h1>CONTACTO</h1></div>
+            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" href="#"></a><a href="#" id="flickr"></a><a href="#" id="twitter"></a><a href="#" id="gplus"></a></div>
+            
+        </div>				
+	</div>
     
 	</body>
 </html>

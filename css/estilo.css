@@ -472,3 +472,26 @@ height: 100%;
 #flickr:hover{background-image:url(../img/flickrverde.png);}
 #gplus{background-image:url(../img/google_plus.png);}
 #gplus:hover{background-image:url(../img/google_plusverde.png);}
+
+#contenedorNoticias{
+	background-color:#FFFFFF; float:left; width:781px; height:750px; overflow:auto;
+}
+
+#contenedorNoticias a{}
+#contenedorNoticias h2{font-family: "denseRegular", sans-serif;
+color:#1F9C74;
+font-size:60px;}
+#contenedorNoticias p{font-family:"Open Sans", sans-serif; text-align:justify;
+	font-size:14px;
+	color:#000000;}
+#contenedorNoticias footer{font-family:"Open Sans", sans-serif;
+	font-size:10px;
+	color:#333333;}
+
+#artic{
+	/*background-color:#999933;*/
+	width:680px;
+	text-align:left;
+	margin-left: 50px;
+	margin-top: 35px;
+}
