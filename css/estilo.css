@@ -173,13 +173,6 @@ height: 100%;
 	margin-right:10px;
 }
 
-#pie{
-	 position: relative;
-	text-align:center;
-	background-color:#0C0C0C;
-	margin-top:25px;
-	height: 150px;
-}
 
 #contenido{
 	text-align:center;
@@ -301,7 +294,7 @@ height: 100%;
 #recomendaciones {
 	float:left;
 	background: rgba(0, 0, 0, 0.75);
-	 text-align:center;
+	 text-align:left;
      width:501px;
 	 height:235px;
      padding:0px;
@@ -310,11 +303,34 @@ height: 100%;
 }
 
 #recomendaciones h1{
+	text-align:center;
 	font-family: 'denseRegular', sans-serif;
 	text-shadow:0 2px #009966;
 	font-size:30px;
 	color:#FFFFFF;
 	margin-top:5px;
+}
+
+#recomendaciones .num{
+	font-family: 'OpenSans-ExtraBold', sans-serif;
+	text-shadow:0 4px #009966;
+	font-size:40px;
+	color:#FFFFFF;
+	margin-top:0;
+	margin-left:30px;
+}
+
+#recomendaciones .recomend{
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-size:20px;
+	color:#FFFFFF;
+	margin-left:15px;
+}
+
+#contenedorRecomend{
+	width: 470px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #encuesta {
@@ -396,3 +412,63 @@ height: 100%;
 	#video{
 		background-color:#00D791;
 	}
+
+#pie{
+	 position: relative;
+	text-align:center;
+	background-color:#000000;
+	margin-top:25px;
+	height: 150px;
+	z-index:8;
+}
+	
+#contenedorpie{
+	position:relative;
+	width:1024px;
+	height:150px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#006600;
+	z-index:9;
+	
+	}
+	
+.cajapie{
+	background:#000000;
+	float:left;
+	width:256px;
+	height:150px;
+	}
+	
+.cajapie h1{
+	margin-left:15px;
+	text-align:left;
+	font-family: 'OpenSans-ExtraBold', sans-serif;
+	text-shadow:0 2px #009966;
+	font-size:20px;
+	color:#FFFFFF;
+	margin-top:10px;
+	
+	}
+	
+	.cajapie p{
+		margin-left:15px;
+	text-align:left;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-size:14px;
+	color:#FFFFFF;
+	margin-top:5px;
+	
+	}
+.cajapie a{
+	float:left; margin-left:13px; margin-top:15px; width:32px; height:32px;
+}
+
+#facebook{ background-image:url(../img/fb_1.png);}
+#facebook:hover{ background-image:url(../img/fb_1verde.png);}
+#twitter{background-image:url(../img/twitter_2.png);}
+#twitter:hover{background-image:url(../img/twitter_2verde.png);}
+#flickr{background-image:url(../img/flickr.png);}
+#flickr:hover{background-image:url(../img/flickrverde.png);}
+#gplus{background-image:url(../img/google_plus.png);}
+#gplus:hover{background-image:url(../img/google_plusverde.png);}
