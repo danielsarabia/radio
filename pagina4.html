@@ -3,12 +3,152 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
+		<link rel="stylesheet" type="text/css" href="css/estilo2.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title></title>
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('#botonpruebafade').click(function(evento) {
+			$('#divquesemuestra').fadeIn(2000);
+			$('#parte').fadeOut(2000);
+			});
+			});
+			$(document).ready(function() {
+$('#Ocultar').click(function(evento) {
+$('#divquesemuestra').fadeOut(2000);
+$('#parte').fadeIn(2000);
+});
+});
+		</script>
+		<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  auto: true, captions: true, pager: false
+});
+});
+</script>
+
+<script language="javascript" type="text/javascript">
+ function playSound() {
+	 
+	 var nvo = document.createElement("div");
+	 nvo.id="rola";
+	 nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
+	 nvo.hidden;
+	 document.getElementById("top").appendChild(nvo);
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/GIF0111.gif";
+ }
+ function envio(){
+ 	var imagen = document.getElementById("enviado");
+	 imagen.src =  "x_email_43.gif";
+ }
+ </script>
 		<meta name="author" content="Sala6" />
 	</head>
 	<body>
+		<div id="top">
+    <nav class="nav">
+    				<li>
+                        <a href="index.html">Inicio<span class="flecha">∨</span></a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <a>Programas<span class="flecha">∨</span></a>
+                        <ul>
+                            <li><a href="script1.html">Programa #1<span class="flecha">∨</span></a></li>
+                            <li><a href="script2.html">Programa #2<span class="flecha">∨</span></a></li>
+                            <li><a href="script3.html">Programa #3<span class="flecha">∨</span></a></li>
+                            <li><a href="script4.html">Programa #4<span class="flecha">∨</span></a></li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    
+                    <li>
+                        <a href="">Videos<span class="flecha">∨</span></a>
+                    </li>
+                    <li>|</li>
+                    
+                    <li>
+                        <a href="">Noticias<span class="flecha">∨</span></a>
+                    </li>
+                    <li>|</li>
+                    
+                    <li>
+                        <a href="">Contacto<span class="flecha">∨</span></a>
+                    </li>
+       
+     <button id="botonstop">  </button>
+    <button id="botonplay" onClick="playSound();">  </button>
+    <p>¡ESCÚCHANOS!</p>
+    <img id="ecualizador"></img>
     
-
+    </nav>
+    </div>
+    <div id="Centro">
+    	<div id="Izquierda">
+    		<p>Av. Instituto Politécnico Nacional 2580, Barrio La Laguna Ticomán, Gustavo A. Madero, 07340, México .D.F. </p>
+    		<br></br>
+    		<p>Telefonos en cabina: (Sin costo) 01-800 LADSETA</p>
+    		<pre id="Telefono">                       (5237381)</pre>
+    		<br></br>
+    		<p>Correo: la_dseta@gmail.com</p>
+    			<br></br>
+    			<div id="CorreoS">
+						<img src="correo-electronico.jpg" width="20">
+						<input type="button" id="botonpruebafade" value="Enviar Correo" style="font-size:14px;cursor:pointer;margin:15px;padding:5px;"/>
+				</div>	
+				<div id="divquesemuestra" style="background:#009966;display:none;width:100px;height:100px;">
+					<form id="Formulario" method="get">
+						<table>
+						<tr>
+							<td>
+								Destinatario
+							</td>
+							<td>
+								<TEXTAREA rows="1" readonly name="comentarios">	Dseta</TEXTAREA>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Su nombre
+							</td>
+							<td>
+								<input type="text" name="Nombre"required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Su correo
+							</td>
+							<td>
+								<input type="email" name="Email"required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Mensaje
+							</td>
+							<td>
+								<TEXTAREA rows="3" name="comentarios"></TEXTAREA>
+							</td>
+						</tr>
+						<TR>
+							<TD COLSPAN=2>
+								<INPUT type="submit" id="Ocultar" value="Enviar" onclick="envio();">
+							</TD>
+						</TR>
+						</table>
+					</form>
+				</div>	
+				<div id="parte">
+					<img id="enviado"></img>
+				</div>			
+    	</div>
+    	<iframe id="Mapa" width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=upiita&amp;aq=&amp;sll=19.497664,-98.66684&amp;sspn=0.788366,1.234589&amp;ie=UTF8&amp;hq=upiita&amp;hnear=&amp;t=m&amp;ll=19.482129,-99.187317&amp;spn=1.242856,1.757812&amp;z=9&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=upiita&amp;aq=&amp;sll=19.497664,-98.66684&amp;sspn=0.788366,1.234589&amp;ie=UTF8&amp;hq=upiita&amp;hnear=&amp;t=m&amp;ll=19.482129,-99.187317&amp;spn=1.242856,1.757812&amp;z=9" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+    	
+    </div>
+		
 	</body>
 </html>
