@@ -204,11 +204,19 @@ height: 100%;
 #logo {
 	float:left;
 	background-color:transparent;
+	background-image:url(../img/logo1p.png);
+	background-repeat:no-repeat;
 	 text-align:center;
      width:242px;
 	 height:250px;
 	 left:auto;
      padding:0px;
+}
+
+#logo:hover {
+	background-image:url(../img/logo1p2.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
 }
 
 #slider {
