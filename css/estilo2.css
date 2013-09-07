@@ -161,6 +161,7 @@ height: 100%;
 	height: 200px;
 }
 #Izquierda{
+	font:20px "denseRegular", verdana;
 	color:#FFFFFF;
 	float:left;
 	margin:6px;
@@ -359,12 +360,12 @@ height: 100%;
 	
 	background-image:url(../img/stopimg_hover_p.png);
 	}
-p{
-	font:20px "denseRegular", verdana;
-}
 #Linkform{
 	font:20px "denseRegular", verdana;
 }
 td{
+	font:20px "denseRegular", verdana;
+}
+pre{
 	font:20px "denseRegular", verdana;
 }
