@@ -276,12 +276,26 @@ height: 100%;
 .noticia {
 	float:left;
 	background-color:#009966;
-	 text-align:center;
+	 text-align:left;
      width:243px;
 	 height:235px;
      padding:0px;
 	 margin-top:15px;
 	 margin-right:15px;
+}
+
+.noticia h1{
+	font-family: 'denseRegular', sans-serif;
+	text-shadow:0 2px #00CC99;
+	font-size:23px;
+	color:#000000;
+	margin-left:10px;
+}
+
+.noticia p{
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-size:12px;
+	margin-left:10px;
 }
 
 #recomendaciones {
