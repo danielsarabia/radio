@@ -48,7 +48,6 @@ color:#33B979;
 a:visited{
 	text-decoration:none;
 }
-
 /*************** MENÚ ****************************/
 .nav p{
 	float:right;
@@ -137,7 +136,6 @@ display: none;
 display: inline;
 }
 /*************** /MENÚ ****************************/
-
 body {
 height: 100%;
 background-image:url(../img/fondopuntos.png);
@@ -148,36 +146,12 @@ html{
 	width:100%;
 height: 100%;
 }
-
-#Telefono{
-	margin-top:0px;
-}
-#CorreoS{
-	width: 170px;
-	}
-#Formu{
-	margin-top:30px;
-	width:300px;
-	height: 200px;
-}
-#Izquierda{
-	font:20px "denseRegular", verdana;
-	color:#FFFFFF;
-	float:left;
-	margin:6px;
-	padding:15px;
-	width:300px;
-	height:450px;
-	margin-left:20px;
-}
-#Centro{
-	width:1000px;
+#Trabajo{
+	width:800px;
+	height:500px;
 	background-color:#009966;
 	margin-left:auto;
 	margin-right:auto;
-}
-#Mapa{
-	margin-top:20px;
 }
 #global{
 	 position: relative;
@@ -240,93 +214,6 @@ height: 100%;
 	 left:auto;
      padding:0px;
 }
-
-#slider {
-	float:left;
-	background-color:#CC9966;
-	 text-align:center;
-     width:502px;
-	 height:250px;
-	 margin-left:15px;
-     padding:0px;
-}
-
-#top10 {
-	float:right;
-	 background-color:#00D791;
-	 text-align:center;
-     width:250px;
-	 height:500px;
-     padding:0px;
-	 text-shadow:0 2px #00CC99;
-}
-
-#top10 h1{
-	font-family: 'denseRegular', sans-serif;
-	background-color:#009966;
-	font-size:50px;
-	color:#000000;
-	border-bottom:2px dotted #000000;
-}
-
-#top10 .numero{
-	font-family: 'OpenSans-ExtraBold', sans-serif;
-	font-size:30px;
-	margin-left:15px;
-}
-
-#top10 .cancion{
-	font-family: 'OpenSans-SemiBold', sans-serif;
-	font-size:15px;
-	margin-left:15px;
-}
-
-#top10 .artista{
-	font-family: 'OpenSans-Regular', sans-serif;
-	font-size:12px;
-	margin-left:15px;
-}
-
-#top10 ul li{
-	/*font-family: 'OpenSans-Semibold', sans-serif;
-	font-size:36px;
-	color:#000000;*/
-	text-align:left;
-	border-bottom:2px dotted #000000;
-}
-
-.noticia {
-	float:left;
-	background-color:#009966;
-	 text-align:center;
-     width:243px;
-	 height:235px;
-     padding:0px;
-	 margin-top:15px;
-	 margin-right:15px;
-}
-
-#recomendaciones {
-	float:left;
-	background-color:#00D791;
-	 text-align:center;
-     width:501px;
-	 height:235px;
-     padding:0px;
-	 margin-top:15px;
-	 margin-right:15px;
-}
-
-#encuesta {
-	float:right;
-	background-color:#3333FF;
-	 text-align:center;
-     width:250px;
-	 height:235px;
-     padding:0px;
-	 margin-top:15px;
-}
-
 #botonplay{
 	margin-right:10px;
 	width:40px;
@@ -418,11 +305,3 @@ pre{
 #flickr:hover{background-image:url(../img/flickrverde.png);}
 #gplus{background-image:url(../img/google_plus.png);}
 #gplus:hover{background-image:url(../img/google_plusverde.png);}
-#pie{
-	 position: relative;
-	text-align:center;
-	background-color:#0C0C0C;
-	margin-top:25px;
-	height: 150px;
-}
-
