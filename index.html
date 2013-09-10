@@ -23,7 +23,6 @@ $(document).ready(function(){
 
 <script language="javascript" type="text/javascript">
  function playSound() {
-	 
 	 var nvo = document.createElement("div");
 	 nvo.id="rola";
 	 nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
@@ -31,6 +30,18 @@ $(document).ready(function(){
 	 document.getElementById("top").appendChild(nvo);
 	 var imagen = document.getElementById("ecualizador");
 	 imagen.src =  "img/GIF0111.gif";
+	 document.getElementById("botonplay").style.backgroundImage='url(playimg_hover_p.png)';
+	 /*alert(""+ document.getElementById("botonplay").style.backgroundImage );*/
+	 
+ }
+ 
+  function stopSound() {
+	 
+	 
+	 document.getElementById("top").removeChild(document.getElementById("rola"));
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/cuadronegro.png";
+	 document.getElementById("botonplay").style.backgroundImage='url(playimg_p.png)';
  }
  </script>
         
@@ -47,9 +58,9 @@ $(document).ready(function(){
                         <a>Programas<span class="flecha">∨</span></a>
                         <ul>
                             <li><a href="Programas.html">Programa #1<span class="flecha">∨</span></a></li>
-                            <li><a href="script2.html">Programa #2<span class="flecha">∨</span></a></li>
-                            <li><a href="script3.html">Programa #3<span class="flecha">∨</span></a></li>
-                            <li><a href="script4.html">Programa #4<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #2<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #3<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #4<span class="flecha">∨</span></a></li>
                         </ul>
                     </li>
                     <li>|</li>
@@ -57,7 +68,7 @@ $(document).ready(function(){
                     
                     
                     <li>
-                        <a href="">Noticias<span class="flecha">∨</span></a>
+                        <a href="Noticias.html">Noticias<span class="flecha">∨</span></a>
                     </li>
                     <li>|</li>
                     
@@ -65,10 +76,10 @@ $(document).ready(function(){
                         <a href="pagina4.html">Contacto<span class="flecha">∨</span></a>
                     </li>
        
-     <button id="botonstop">  </button>
+     <button id="botonstop" onClick="stopSound();">  </button>
     <button id="botonplay" onClick="playSound();">  </button>
     <p>¡ESCÚCHANOS!</p>
-    <img id="ecualizador"></img>
+    <img id="ecualizador" src="img/cuadronegro.png"></img>
     
     </nav>
     </div>
@@ -84,6 +95,7 @@ $(document).ready(function(){
                            <ul class="bxslider">
                               <li><img src="img/img2.jpg" title="¡GANA BOLETOS GRATIS A LOS MEJORES CONCIERTOS!" /></li>
                               <li><img src="img/img3.jpg" title="GEPE EN MÉXICO" /></li>
+                              <li><img src="img/miabadgirls.png" title="M.I.A.: BAD GIRLS" /></li>
                         </ul> 
                 </div>
                 
@@ -99,26 +111,26 @@ $(document).ready(function(){
                                 <li><span class="numero">7</span> <span class="cancion">Nada</span> <span class="artista">Belinda</span> </li>
                                 <li><span class="numero">8</span> <span class="cancion">Wake Me Up</span> <span class="artista">Avicii</span> </li>
                                 <li><span class="numero">9</span> <span class="cancion">Mal de Amores</span> <span class="artista">Juan Magan</span> </li>
-                                <li><span class="numero">10</span> <span class="cancion">Give me a Reason</span> <span class="artista">Pink</span> </li>
+                                <li class="bottom"><span class="numero">10</span> <span class="cancion">Give me a Reason</span> <span class="artista">Pink</span> </li>
                            </ul>
                 </div>
                 
                 <div class="noticia">
                            <img src="img/katy_p.png" />
-                           <h1> Katy Perry estrena el video de Roar </h1>
-                           <p>Se acabó la espera, Katy Perry lanzó su nuevo video.</p>
+                           <h1>Katy Perry estrena el video de Roar</h1>
+                           <p><a href="Noticias.html">Se acabó la espera, Katy Perry lanzó su nuevo video.</a></p>
                 </div>
                 
                 <div class="noticia">
                            <img src="img/gepe_pp.jpg" />
                            <h1> Gepe anuncia fechas en México </h1>
-                           <p>Se presentará en el Lunario del Auditorio Nacional.</p>
+                           <p><a href="Noticias.html">Se presentará en el Lunario del Auditorio Nacional.</a></p>
                 </div>
                 
                 <div class="noticia">
                            <img src="img/jorgedrexler_pp.jpg" />
                            <h1> RESEÑA: Drexler en el Metropólitan </h1>
-                           <p>Jorge Drexler se presentón con lleno total en el Teatro Metropólitan.</p>
+                           <p><a href="Noticias.html">Jorge Drexler se presentón con lleno total en el Teatro Metropólitan.</a></p>
                 </div>
                 
                 <div id="recomendaciones">
@@ -128,7 +140,7 @@ $(document).ready(function(){
                 </div>
                 
                 <div class="noticia" id="video">
-                           <object width="242" height="136"><param name="movie" value="//www.youtube.com/v/2uYs0gJD-LE?hl=es_MX&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/2uYs0gJD-LE?hl=es_MX&amp;version=3" type="application/x-shockwave-flash" width="242" height="136" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+                          <iframe title="YouTube video player" src="http://www.youtube.com/embed/2uYs0gJD-LE?rel=0?rel=0&amp;showinfo=0" width="243" height="137" frameborder="0"></iframe>
                            <h1> VIDEO: M.I.A.- Bad Girls </h1>
                            <p>Dirigido por Roman Gavras.</p>
                 </div>
@@ -157,10 +169,10 @@ $(document).ready(function(){
     
     <div id="pie">
         <div id="contenedorpie">
-        	<div class="cajapie"><h1>PROGRAMAS</h1><p>Programa 1</p><p>Programa 2</p><p>Programa 3</p><p>Programa 4</p></div>
-            <div class="cajapie"><h1>NOTICIAS</h1><p>Destacadas</p><p>Reseñas</p><p>Columna</p><p>Exclusivas</p></div>
-            <div class="cajapie"><h1>INICIO</h1><h1>CONTACTO</h1></div>
-            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" href="#"></a><a href="#" id="flickr"></a><a href="#" id="twitter"></a><a href="#" id="gplus"></a></div>
+        	<div class="cajapie"><h1>PROGRAMAS</h1><p><a href="Programas.html">Programa 1</a></p><p><a href="Programas.html">Programa 2</a></p><p><a href="Programas.html">Programa 3</a></p><p><a href="Programas.html">Programa 4</a></p></div>
+            <div class="cajapie"><h1>NOTICIAS</h1><p><a href="Noticias.html">Destacadas</a></p><p><a href="Noticias.html">Reseñas</a></p><p><a href="Noticias.html">Columna</a></p><p><a href="Noticias.html">Exclusivas</a></p></div>
+            <div class="cajapie"><h1><a href="index.html">INICIO</a></h1><h1><a href="pagina4.html">CONTACTO</a></h1></div>
+            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" class="redes" href="#"></a><a href="#" id="flickr" class="redes"></a><a href="#" id="twitter" class="redes"></a><a href="#" id="gplus" class="redes"></a></div>
             
         </div>				
 	</div>

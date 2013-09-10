@@ -86,12 +86,12 @@ display:block;
 }
  
 .nav li a:hover {
-background:#0C0C0C;
+background:#000000;
 }
 
 /*PRUEBA*/
 .nav li ul li a{
-background-color:#0C0C0C;
+background-color:#000000;
 color:#FFFFFF;
 padding-left: 10px;
 padding-right: 10px;
@@ -265,6 +265,8 @@ height: 100%;
 	text-align:left;
 	border-bottom:2px dotted #000000;
 }
+
+#top10 .bottom{ border-bottom:none;}
 
 .noticia {
 	float:left;
@@ -460,7 +462,7 @@ height: 100%;
 	margin-top:5px;
 	
 	}
-.cajapie a{
+.cajapie .redes{
 	float:left; margin-left:13px; margin-top:15px; width:32px; height:32px;
 }
 
