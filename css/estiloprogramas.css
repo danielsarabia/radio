@@ -85,12 +85,12 @@ display:block;
 }
  
 .nav li a:hover {
-background:#0C0C0C;
+background:#000000;
 }
 
 /*PRUEBA*/
 .nav li ul li a{
-background-color:#0C0C0C;
+background-color:#000000;
 color:#FFFFFF;
 padding-left: 10px;
 padding-right: 10px;
@@ -356,4 +356,47 @@ font-size:60px;}
 	text-align:left;
 	margin-left: 50px;
 	margin-top: 35px;
+}
+
+.textoLogin{
+	float:left;
+	margin-top:15px;
+	margin-left:15px;
+	
+	font-family:"OpenSans-Light", sans-serif;
+	font-size:14px;
+	padding-left:0px;
+	color:#999999;
+	
+	
+	background-image:url(../img/fondotexto.png);
+	border: 1px solid #999999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-radius-topright: 0px;
+	-webkit-border-radius-bottomright: 0px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+	width:150px;
+	height:26px;
+}
+
+#buscar{
+	float:left;
+	margin-top:15px;
+	width:26px; height:28px;
+	background-image:url(../img/buscar.jpg);
+	border:2px solid #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius-topleft: 0px;
+	-webkit-border-radius-bottomleft: 0px;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
 }
