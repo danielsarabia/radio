@@ -22,8 +22,7 @@ $(document).ready(function(){
 </script>
 
 <script language="javascript" type="text/javascript">
- function playSound() {
-	 
+function playSound() {
 	 var nvo = document.createElement("div");
 	 nvo.id="rola";
 	 nvo.innerHTML= "<audio autoplay hidden> <source src='03 Boyz.mp3' type='audio/mpeg'></audio> ";
@@ -31,6 +30,18 @@ $(document).ready(function(){
 	 document.getElementById("top").appendChild(nvo);
 	 var imagen = document.getElementById("ecualizador");
 	 imagen.src =  "img/GIF0111.gif";
+	 document.getElementById("botonplay").style.backgroundImage='url(playimg_hover_p.png)';
+	 /*alert(""+ document.getElementById("botonplay").style.backgroundImage );*/
+	 
+ }
+ 
+  function stopSound() {
+	 
+	 
+	 document.getElementById("top").removeChild(document.getElementById("rola"));
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/cuadronegro.png";
+	 document.getElementById("botonplay").style.backgroundImage='url(playimg_p.png)';
  }
  </script>
         
@@ -46,10 +57,10 @@ $(document).ready(function(){
                     <li>
                         <a>Programas<span class="flecha">∨</span></a>
                         <ul>
-                            <li><a href="script1.html">Programa #1<span class="flecha">∨</span></a></li>
-                            <li><a href="script2.html">Programa #2<span class="flecha">∨</span></a></li>
-                            <li><a href="script3.html">Programa #3<span class="flecha">∨</span></a></li>
-                            <li><a href="script4.html">Programa #4<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #1<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #2<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #3<span class="flecha">∨</span></a></li>
+                            <li><a href="Programas.html">Programa #4<span class="flecha">∨</span></a></li>
                         </ul>
                     </li>
                     <li>|</li>
@@ -57,7 +68,7 @@ $(document).ready(function(){
                     
                     
                     <li>
-                        <a href="">Noticias<span class="flecha">∨</span></a>
+                        <a href="Noticias.html">Noticias<span class="flecha">∨</span></a>
                     </li>
                     <li>|</li>
                     
@@ -65,10 +76,10 @@ $(document).ready(function(){
                         <a href="pagina4.html">Contacto<span class="flecha">∨</span></a>
                     </li>
        
-     <button id="botonstop">  </button>
+     <button id="botonstop" onClick="stopSound();">  </button>
     <button id="botonplay" onClick="playSound();">  </button>
     <p>¡ESCÚCHANOS!</p>
-    <img id="ecualizador"></img>
+    <img id="ecualizador" src="img/cuadronegro.png"></img>
     
     </nav>
     </div>
@@ -81,7 +92,7 @@ $(document).ready(function(){
                     	<p>Katy Perry estrenó el videoclip de Roar, el primer sencillo de su nuevo disco Prism, que será lanzado el 22 de octubre.
 </p>
 <p>En el video video, la artista aparece en la selva, donde convive con animales salvajes y se cuelga de lianas.</p>
-<iframe width="420" height="315" src="//www.youtube.com/embed/CevxZvSJLk8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="YouTube video player" src="http://www.youtube.com/embed/CevxZvSJLk8?rel=0?rel=0&amp;showinfo=0" width="420" height="315" frameborder="0"></iframe>
 
  </section> </article>
  
@@ -122,10 +133,10 @@ $(document).ready(function(){
     
     <div id="pie">
         <div id="contenedorpie">
-        	<div class="cajapie"><h1>PROGRAMAS</h1><p>Programa 1</p><p>Programa 2</p><p>Programa 3</p><p>Programa 4</p></div>
-            <div class="cajapie"><h1>NOTICIAS</h1><p>Destacadas</p><p>Reseñas</p><p>Columna</p><p>Exclusivas</p></div>
-            <div class="cajapie"><h1>INICIO</h1><h1>CONTACTO</h1></div>
-            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" href="#"></a><a href="#" id="flickr"></a><a href="#" id="twitter"></a><a href="#" id="gplus"></a></div>
+        	<div class="cajapie"><h1>PROGRAMAS</h1><p><a href="Programas.html">Programa 1</a></p><p><a href="Programas.html">Programa 2</a></p><p><a href="Programas.html">Programa 3</a></p><p><a href="Programas.html">Programa 4</a></p></div>
+            <div class="cajapie"><h1>NOTICIAS</h1><p><a href="Noticias.html">Destacadas</a></p><p><a href="Noticias.html">Reseñas</a></p><p><a href="Noticias.html">Columna</a></p><p><a href="Noticias.html">Exclusivas</a></p></div>
+            <div class="cajapie"><h1><a href="index.html">INICIO</a></h1><h1><a href="pagina4.html">CONTACTO</a></h1></div>
+            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" class="redes" href="#"></a><a href="#" id="flickr" class="redes"></a><a href="#" id="twitter" class="redes"></a><a href="#" id="gplus" class="redes"></a></div>
             
         </div>				
 	</div>
