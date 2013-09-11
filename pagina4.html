@@ -44,6 +44,14 @@ $(document).ready(function(){
  	var imagen = document.getElementById("enviado");
 	 imagen.src =  "70.gif";
  }
+  function stopSound() {
+	 
+	 
+	 document.getElementById("top").removeChild(document.getElementById("rola"));
+	 var imagen = document.getElementById("ecualizador");
+	 imagen.src =  "img/cuadronegro.png";
+	 document.getElementById("botonplay").style.backgroundImage='url(playimg_p.png)';
+ }
  </script>
 		<meta name="author" content="Sala6" />
 	</head>
@@ -58,20 +66,16 @@ $(document).ready(function(){
                         <a>Programas<span class="flecha">∨</span></a>
                         <ul>
                             <li><a href="Programas.html">Programa #1<span class="flecha">∨</span></a></li>
-                            <li><a href="script2.html">Programa #2<span class="flecha">∨</span></a></li>
-                            <li><a href="script3.html">Programa #3<span class="flecha">∨</span></a></li>
-                            <li><a href="script4.html">Programa #4<span class="flecha">∨</span></a></li>
+                            <li><a href="programa2.html">Programa #2<span class="flecha">∨</span></a></li>
+                            <li><a href="programa3.html">Programa #3<span class="flecha">∨</span></a></li>
+                           
                         </ul>
                     </li>
+                   
                     <li>|</li>
                     
                     <li>
-                        <a href="">Videos<span class="flecha">∨</span></a>
-                    </li>
-                    <li>|</li>
-                    
-                    <li>
-                        <a href="">Noticias<span class="flecha">∨</span></a>
+                        <a href="Noticias.html">Noticias<span class="flecha">∨</span></a>
                     </li>
                     <li>|</li>
                     
@@ -79,7 +83,7 @@ $(document).ready(function(){
                         <a href="pagina4.html">Contacto<span class="flecha">∨</span></a>
                     </li>
        
-     <button id="botonstop">  </button>
+     <button id="botonstop" onClick="stopSound();">  </button>
     <button id="botonplay" onClick="playSound();">  </button>
     <p>¡ESCÚCHANOS!</p>
     <img id="ecualizador"></img>
@@ -151,10 +155,10 @@ $(document).ready(function(){
     </div>
 		<div id="pie">
         <div id="contenedorpie">
-        	<div class="cajapie"><h1>PROGRAMAS</h1><p>Programa 1</p><p>Programa 2</p><p>Programa 3</p><p>Programa 4</p></div>
-            <div class="cajapie"><h1>NOTICIAS</h1><p>Destacadas</p><p>Reseñas</p><p>Columna</p><p>Exclusivas</p></div>
-            <div class="cajapie"><h1>INICIO</h1><h1>CONTACTO</h1></div>
-            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" href="#"></a><a href="#" id="flickr"></a><a href="#" id="twitter"></a><a href="#" id="gplus"></a></div>
+        	<div class="cajapie"><h1>PROGRAMAS</h1><p><a href="Programas.html">Programa 1</a></p><p><a href="programa2.html">Programa 2</a></p><p><a href="programa3.html">Programa 3</a></p></div>
+            <div class="cajapie"><h1>NOTICIAS</h1><p><a href="Noticias.html">Destacadas</a></p><p><a href="Noticias.html">Reseñas</a></p><p><a href="Noticias.html">Columna</a></p><p><a href="Noticias.html">Exclusivas</a></p></div>
+            <div class="cajapie"><h1><a href="index.html">INICIO</a></h1><h1><a href="pagina4.html">CONTACTO</a></h1></div>
+            <div class="cajapie"><h1>REDES SOCIALES</h1><a id="facebook" class="redes" href="#"></a><a href="#" id="flickr" class="redes"></a><a href="#" id="twitter" class="redes"></a><a href="#" id="gplus" class="redes"></a></div>
             
         </div>				
 	</div>

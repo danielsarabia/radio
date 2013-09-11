@@ -369,6 +369,15 @@ td{
 pre{
 	font:20px "denseRegular", verdana;
 }
+#pie{
+	 position: relative;
+	text-align:center;
+	background-color:#000000;
+	margin-top:25px;
+	height: 150px;
+	z-index:8;
+}
+	
 #contenedorpie{
 	position:relative;
 	width:1024px;
@@ -379,6 +388,7 @@ pre{
 	z-index:9;
 	
 	}
+	
 .cajapie{
 	background:#000000;
 	float:left;
@@ -406,7 +416,7 @@ pre{
 	margin-top:5px;
 	
 	}
-.cajapie a{
+.cajapie .redes{
 	float:left; margin-left:13px; margin-top:15px; width:32px; height:32px;
 }
 
@@ -418,11 +428,4 @@ pre{
 #flickr:hover{background-image:url(../img/flickrverde.png);}
 #gplus{background-image:url(../img/google_plus.png);}
 #gplus:hover{background-image:url(../img/google_plusverde.png);}
-#pie{
-	 position: relative;
-	text-align:center;
-	background-color:#0C0C0C;
-	margin-top:25px;
-	height: 150px;
-}
 
